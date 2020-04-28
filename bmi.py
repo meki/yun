@@ -10,7 +10,6 @@ def calc_bmi(ctx):
   bmi = str(weight/(height*height))
   rslt = document["result"]
   rslt.text = bmi
-  log(str(bmi))
 
 execute_btn = document["execute"]
 execute_btn.bind("click", calc_bmi)
