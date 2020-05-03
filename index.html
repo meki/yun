@@ -18,27 +18,36 @@
 
 <body onload="brython()">
     <div class="container is-fluid">
-        <img class="uk-margin-bottom" width="140" height="120"
-            src="https://1.bp.blogspot.com/-v7vcAidN4Fk/VGLMZtbq2II/AAAAAAAApAA/ge9cE_iHejA/s800/himan05_man.png"
-            alt="">
+        <div class="box">
+            <figure class="image is-1by1">
+                <img class="is-rounded"
+                    src="https://1.bp.blogspot.com/-v7vcAidN4Fk/VGLMZtbq2II/AAAAAAAApAA/ge9cE_iHejA/s800/himan05_man.png">
+            </figure>
 
-        <div class="field">
-            <label class="label">身長</label>
-            <div class="control">
-                <input id="height" class="input" type="text" placeholder="メートル">
+            <div class="field">
+                <label class="label">身長</label>
+                <div class="control">
+                    <input id="height" class="input" type="text" placeholder="メートル">
+                </div>
             </div>
-        </div>
 
-        <div class="field">
-            <label class="label">体重</label>
-            <div class="control">
-                <input id="weight" class="input" type="text" placeholder="キログラム">
+            <div class="field">
+                <label class="label">体重</label>
+                <div class="control">
+                    <input id="weight" class="input" type="text" placeholder="キログラム">
+                </div>
             </div>
-        </div>
-        <div class="field is-grouped">
-            <div class="control">
-                <button id="result" class="button is-link">計算</button>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button id="result" class="button is-link">計算</button>
+                </div>
             </div>
+
+            <div class="field">
+                <label class="label">結果</label>
+                <span id="result" class="tag is-rounded is-large"></span>
+            </div>
+
         </div>
     </div>
 </body>
