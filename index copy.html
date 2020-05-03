@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="uk-height-1-1">
+    <head>
+        <title>Calc BMI</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- UIkit CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css" />
+        <!-- UIkit JS -->
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js"></script>
+
+        <!-- brython -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.8.8/brython.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.8.8/brython_stdlib.js"></script>
+
+		<script type="text/python" src="./bmi.py"></script>
+    </head>
+
+    <body class="uk-height-1-1" onload="brython()">
+
+        <div class="uk-vertical-align uk-text-center uk-height-1-1">
+            <div class="uk-vertical-align-middle" style="width: 250px;">
+    
+                <img class="uk-margin-bottom" width="140" height="120"
+                    src="https://1.bp.blogspot.com/-v7vcAidN4Fk/VGLMZtbq2II/AAAAAAAApAA/ge9cE_iHejA/s800/himan05_man.png"
+                    alt="">
+    
+                <div class="uk-panel uk-panel-box uk-form">
+                    <div class="uk-form-row">
+                        <input class="uk-width-1-1 uk-form-large" type="text" placeholder="メートル" id="height">
+                    </div>
+                    <div class="uk-form-row">
+                        <input class="uk-width-1-1 uk-form-large" type="text" placeholder="wight" id="weight">
+                    </div>
+                    <div class="uk-form-row">
+                        <button class="uk-width-1-1 uk-button uk-button-primary uk-button-large" id="execute">計算</button>
+                    </div>
+                    <div class="uk-form-row" id="result"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
