@@ -19,8 +19,8 @@
 <body onload="brython()">
     <div class="container is-fluid">
         <div class="box">
-            <figure class="image is-128x128">
-                <img class="is-rounded"
+            <figure class="image">
+                <img class="has-ratio" height="360" 
                     src="https://1.bp.blogspot.com/-v7vcAidN4Fk/VGLMZtbq2II/AAAAAAAApAA/ge9cE_iHejA/s800/himan05_man.png">
             </figure>
 
@@ -37,15 +37,16 @@
                     <input id="weight" class="input" type="text" placeholder="キログラム">
                 </div>
             </div>
-            <div class="field is-grouped">
+
+            <div class="field">
                 <div class="control">
                     <button id="execute" class="button is-link">計算</button>
                 </div>
+            </div>
 
-                <div class="field">
-                    <label class="label">結果</label>
-                    <span id="result" class="tag is-rounded is-large"></span>
-                </div>
+            <div class="field">
+                <label class="label">結果</label>
+                <span id="result" class="tag is-rounded is-large"></span>
             </div>
 
         </div>
